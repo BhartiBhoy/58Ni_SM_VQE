@@ -263,7 +263,7 @@ elif Optimizer_name == 'GradientDescent':
     optimizer = GradientDescent(maxiter=Iterations, learning_rate=0.1)
 
 vqe = VQE1(
-    Estimator(options={'shots':10}),
+    Estimator(),
     # BackendEstimator(backend=backend,options={'shots':8000}),
     ansatz=ansatz,
     optimizer=optimizer,
